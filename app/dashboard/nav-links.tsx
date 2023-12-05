@@ -9,9 +9,10 @@ import {
   import { usePathname } from 'next/navigation';
   import clsx from 'clsx';
 
-  const pathname = usePathname();
-   
+  
   export default function NavLinks() {
+    const pathname = usePathname();
+    
     return (
       <>
         {links.map((link) => {
